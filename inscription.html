@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ChapMoney</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.0/css/all.min.css" integrity="sha512-3PN6gfRNZEX4YFyz+sIyTF6pGlQiryJu9NlGhu9LrLMQ7eDjNgudQoFDK3WSNAayeIKc6B8WXXpo4a7HqxjKwg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&family=Zen+Kurenaido&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background: #1B1E63;
+            height: 100vh;
+        }
+        * {
+            font-family: 'Quicksand', sans-serif;
+        }
+        input::placeholder {
+            color: white !important;
+            opacity: 0.5;
+        }
+    </style>
+</head>
+<body>
+    <!-- <div class="container p-2">
+        <figure class="image is-48x48">
+            <img src="/logo.png">
+        </figure>
+
+        <h2 class="title has-text-white">
+            Inscrivez-vous
+        </h2>
+
+        <div class="columns is-white">
+            <div class="column is-full">
+                <div class="box p-2">
+                    <div class="field">
+                      <label class="label">Nom</label>
+                      <div class="control">
+                        <input class="input" pla type="email" placeholder="e.g. alex@example.com">
+                      </div>
+                      <label class="label">Prénoms</label>
+                      <div class="control">
+                        <input class="input" pla type="email" placeholder="e.g. alex@example.com">
+                      </div>
+                      <label class="label">Email</label>
+                      <div class="control">
+                        <input class="input" pla type="email" placeholder="e.g. alex@example.com">
+                      </div>
+                      <label class="label">Téléphone</label>
+                      <div class="control">
+                        <input class="input" pla type="email" placeholder="e.g. alex@example.com">
+                      </div>
+                      <label class="label">Mot de passe</label>
+                      <div class="control">
+                        <input class="input" pla type="email" placeholder="e.g. alex@example.com">
+                      </div>
+                      <label class="label">Confirmation mot de passe</label>
+                      <div class="control">
+                        <input class="input" pla type="email" placeholder="e.g. alex@example.com">
+                      </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <a href="inscription.html" class="button is-primary is-rounded is-fullwidth">S'inscrire</a>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+    <section class="section">
+        <div class="container">
+
+            
+            <span class="icon has-text-white">
+                <a href="index.html"><i class="fas has-text-white fa-chevron-left"></i></a>
+            </span>
+
+            <p class="title has-text-white has-text-centered">
+                Inscription
+            </p>
+
+            <div class="field">
+                <div class="control" style="border-bottom: 1px solid white;">
+                <input class="input" type="text" placeholder="Nom" style="background: none;color:white; border: none;">
+                </div>
+            </div>
+            <div class="field">
+                <div class="control" style="border-bottom: 1px solid white;">
+                <input class="input" type="text" placeholder="Prénoms" style="background: none;color:white; border: none;">
+                </div>
+            </div>
+            <div class="field" style="display: flex;gap:10px;">
+                <div class="control" style="border-bottom: 1px solid white;width: 90px;">
+                    <input value="(+225)" id="code_pays" class="input js-modal-trigger" type="button" style="background: none;color:white; border: none;" data-target="modal-js-example">
+                </div>
+                <div class="control" style="border-bottom: 1px solid white;width: 100%;">
+                    <input class="input" type="text" placeholder="01 02 03 04 05" style="background: none;color:white; border: none;">
+                </div>
+            </div>
+            <div class="field">
+                <div class="control" style="border-bottom: 1px solid white;">
+                    <input class="input" type="text" placeholder="Email" style="background: none;color:white; border: none;">
+                </div>
+            </div>
+            <div class="field">
+                <div class="control" style="border-bottom: 1px solid white;">
+                    <input class="input" type="text" placeholder="Mot de passe" style="background: none;color:white; border: none;">
+                </div>
+            </div>
+            <div class="field">
+                <div class="control" style="border-bottom: 1px solid white;">
+                    <input class="input" type="text" placeholder="Confirmez le mot de passe" style="background: none;color:white; border: none;">
+                </div>
+            </div>
+            <div class="field mt-5">
+                <div class="control">
+                    <label class="checkbox has-text-white">
+                    <input type="checkbox">
+                    J'accepte les <a href="#" class="has-text-danger">termes et conditions</a>
+                    </label>
+                </div>
+            </div>
+            <div class="column">
+                <a href="inscription.html" class="button is-primary is-rounded is-fullwidth">S'inscrire</a>
+            </div>
+            <div class="column  has-text-centered">
+                <a href="connexion.html" class="has-text-white" style="text-decoration: underline;">J'ai déjà un compte</a>
+            </div>
+        </div>
+  </section>
+
+  <div id="modal-js-example" class="modal">
+    <div class="modal-background"></div>
+  
+    <div class="modal-content">
+      <div class="box">
+        <div class="columns">
+            <div class="column">
+                <label class="radio">
+                    <input value="+32" type="radio" name="pays">
+                    Belgique
+                </label>
+            </div>
+            <div class="column">
+                <label class="radio">
+                    <input value="+1" type="radio" name="pays">
+                    Canada
+                </label>
+            </div>
+            <div class="column">
+                <label class="radio">
+                    <input value="+225" type="radio" name="pays" checked>
+                    Côte d'Ivoire
+                </label>
+            </div>
+            <div class="column">
+                <label class="radio">
+                    <input value="+237" type="radio" name="pays">
+                    Cameroun
+                </label>
+            </div>
+            <div class="column">
+                <label class="radio">
+                    <input value="+236" type="radio" name="pays">
+                    Centre Afrique
+                </label>
+            </div>
+            <div class="column">
+                <label class="radio">
+                    <input value="+86" type="radio" name="pays">
+                    Chine
+                </label>
+            </div>
+            <div class="column">
+                <label class="radio">
+                    <input value="+243" type="radio" name="pays">
+                    Congo
+                </label>
+            </div>
+            <div class="column">
+                <label class="radio">
+                    <input value="+45" type="radio" name="pays">
+                    Danemark
+                </label>
+            </div>
+            <div class="column">
+                <label class="radio">
+                    <input value="+241" type="radio" name="pays">
+                    Gabon
+                </label>
+            </div>
+            <div class="column">
+                <label class="radio">
+                    <input value="+33" type="radio" name="pays">
+                    France
+                </label>
+            </div>
+            <div class="column">
+                <label class="radio">
+                    <input value="+1" type="radio" name="pays">
+                    Etat-Unis
+                </label>
+            </div>
+            <div class="column">
+                <label class="radio">
+                    <input value="+46" type="radio" name="pays">
+                    Suède
+                </label>
+            </div>
+            <div class="column">
+                <label class="radio">
+                    <input value="+41" type="radio" name="pays">
+                    Suisse
+                </label>
+            </div>
+            <div class="column">
+                <label class="radio">
+                    <input value="+7" type="radio" name="pays">
+                    Russie
+                </label>
+            </div>
+          </div>
+      </div>
+    </div>
+  
+    <button class="modal-close is-large" aria-label="close"></button>
+  </div>
+
+  <script
+  src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  crossorigin="anonymous"></script>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+        // Functions to open and close a modal
+        function openModal($el) {
+            $el.classList.add('is-active');
+        }
+
+        function closeModal($el) {
+            $el.classList.remove('is-active');
+        }
+
+        function closeAllModals() {
+            (document.querySelectorAll('.modal') || []).forEach(($modal) => {
+            closeModal($modal);
+            });
+        }
+
+        // Add a click event on buttons to open a specific modal
+        (document.querySelectorAll('.js-modal-trigger') || []).forEach(($trigger) => {
+            const modal = $trigger.dataset.target;
+            const $target = document.getElementById(modal);
+
+            $trigger.addEventListener('click', () => {
+            openModal($target);
+            });
+        });
+
+        // Add a click event on various child elements to close the parent modal
+        (document.querySelectorAll('.modal-background, .modal-close, .modal-card-head .delete, .modal-card-foot .button') || []).forEach(($close) => {
+            const $target = $close.closest('.modal');
+
+            $close.addEventListener('click', () => {
+            closeModal($target);
+            });
+        });
+
+        // Add a keyboard event to close all modals
+        document.addEventListener('keydown', (event) => {
+            const e = event || window.event;
+
+            if (e.keyCode === 27) { // Escape key
+            closeAllModals();
+            }
+        });
+
+        $('input:radio[name="pays"]').change(
+        function(){
+            if ($(this).is(':checked')) {
+                let value = $(this).val()
+                $('#code_pays').val(`(${value})`)
+                closeAllModals();
+            }
+        });
+
+    });
+  </script>
+</body>
+</html>
